@@ -1,22 +1,17 @@
-class SelectionSort{
-    public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
-        int tar = 5;
-        int l = 0;
-        int r = arr.length;
-        
-        while(l<r){
-            int mid = (l+r)/2;
-            if(arr[mid] == tar){
-                System.out.println("Found at "+mid);
-                break;
-            }else if(tar>arr[mid]){
-                l = mid+1;
-            }else if(tar<arr[mid]){
-                r = mid-1;
-            }else{
-                System.out.println("Not Found");
-                break;
-            }
-        }
+import java.util.Arrays;
+
+public class SelectionSort {
+     public static void main(String[] args) {
+       int[] arr = {5,3,6,2,7};
+       for(int i=0;i<arr.length-1;i++){
+           int min = i;
+           for(int j= i+1;j<arr.length;j++){
+               if(arr[j]<arr[min]){
+                   min = j;
+               }
+           }
+           int temp = arr[i];
+               arr[i] = arr[min];
+               arr[min] = temp;
+    }System.out.println(Arrays.toString(arr));
 }
