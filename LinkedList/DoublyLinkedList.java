@@ -9,7 +9,6 @@ class Node{
         this.data = data;
     }
 }
-
 class LinkedList{
     Node head,tail;
     public void insert(int data){
