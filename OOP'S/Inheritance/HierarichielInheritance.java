@@ -1,3 +1,4 @@
+package Inheritance;
 class Shape{
     float length,breadth,radius;
 }
