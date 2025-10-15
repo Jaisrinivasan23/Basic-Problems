@@ -72,10 +72,6 @@ public class MergeSort {
         }
         
         // Copy remaining elements of rightArray[] if any
-        while (j < n2) {
-            arr[k] = rightArray[j];
-            j++;
-            k++;
-        }
+        
     }
 }
